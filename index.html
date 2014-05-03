@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 	
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css">
 	
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -29,48 +32,56 @@
 		
 		<ul data-role="listview">
 		    <li>
-		    	<h2 class="showName focusState">Jim Rome</h2>
+            	<img class= "listThumbnail" src="image/thumb_1.png">
+		    	<h2>Jim Rome</h2>
 		    	<p>Jim discusses the NBA Playoffs</p>
 			    <p>Today | 45 min</p>
 			</li>
 			
 			<li>
+				<img class= "listThumbnail" src="image/thumb_2.png">
+		    	<h2>Jim Rome</h2>
+		    	<p>Jim discusses the NBA Playoffs</p>
+			    <p>Today | 45 min</p>
+			</li>
+			
+			<li>
+				<img class= "listThumbnail" src="image/thumb_3.png">
 		    	<h2 class="showName">Jim Rome</h2>
 		    	<p>Jim discusses the NBA Playoffs</p>
 			    <p>Today | 45 min</p>
 			</li>
 			
 			<li>
+				<img class= "listThumbnail" src="image/thumb.png">
 		    	<h2 class="showName">Jim Rome</h2>
 		    	<p>Jim discusses the NBA Playoffs</p>
 			    <p>Today | 45 min</p>
 			</li>
 			
 			<li>
+				<img class= "listThumbnail" src="image/thumb.png">
 		    	<h2 class="showName">Jim Rome</h2>
 		    	<p>Jim discusses the NBA Playoffs</p>
 			    <p>Today | 45 min</p>
 			</li>
 			
 			<li>
+				<img class= "listThumbnail" src="image/thumb.png">
 		    	<h2 class="showName">Jim Rome</h2>
 		    	<p>Jim discusses the NBA Playoffs</p>
 			    <p>Today | 45 min</p>
 			</li>
 			
 			<li>
+				<img class= "listThumbnail" src="image/thumb.png">
 		    	<h2 class="showName">Jim Rome</h2>
 		    	<p>Jim discusses the NBA Playoffs</p>
 			    <p>Today | 45 min</p>
 			</li>
 			
 			<li>
-		    	<h2 class="showName">Jim Rome</h2>
-		    	<p>Jim discusses the NBA Playoffs</p>
-			    <p>Today | 45 min</p>
-			</li>
-			
-			<li>
+				<img class= "listThumbnail" src="image/thumb.png">
 		    	<h2 class="showName">Jim Rome</h2>
 		    	<p>Jim discusses the NBA Playoffs</p>
 			    <p>Today | 45 min</p>
@@ -94,20 +105,21 @@
 		<!--CONTENT-->
 		<article data-role="content">
 			
-			<!--LIST VIEW OF SHOWS-->
-			<ul data-role="listview">
-			    <li>
-			    	<h2 class="showName focusState">Jim Rome</h2>
-			    	<p>Jim discusses the NBA Playoffs</p>
-				    <p>Today | 45 min</p>
-				</li>
-				
-				<li>
-			    	<h2 class="showName">Jim Rome</h2>
-			    	<p>Jim discusses the NBA Playoffs</p>
-				    <p>Today | 45 min</p>
-				</li>
-			</ul>
+			<!--GRID OF SHOWS-->
+			<div class="ui-grid-a">
+			    <div class="ui-block-a"><div class="ui-bar ui-bar-a grid-a" style="height:80px">Jim Rome</div></div>
+			    <div class="ui-block-b"><div class="ui-bar ui-bar-a grid-a" style="height:80px">Mike and Mike</div></div>
+			    <div class="ui-block-a"><div class="ui-bar ui-bar-a grid-a" style="height:80px">Jim Rome</div></div>
+			    <div class="ui-block-b"><div class="ui-bar ui-bar-a grid-a" style="height:80px">Mike and Mike</div></div>
+			    <div class="ui-block-a"><div class="ui-bar ui-bar-a grid-a" style="height:80px">Jim Rome</div></div>
+			    <div class="ui-block-b"><div class="ui-bar ui-bar-a grid-a" style="height:80px">Mike and Mike</div></div>
+			    <div class="ui-block-a"><div class="ui-bar ui-bar-a grid-a" style="height:80px">Jim Rome</div></div>
+			    <div class="ui-block-b"><div class="ui-bar ui-bar-a grid-a" style="height:80px">Mike and Mike</div></div>
+			    <div class="ui-block-a"><div class="ui-bar ui-bar-a grid-a" style="height:80px">Jim Rome</div></div>
+			    <div class="ui-block-b"><div class="ui-bar ui-bar-a grid-a" style="height:80px">Mike and Mike</div></div>
+			    <div class="ui-block-a"><div class="ui-bar ui-bar-a grid-a" style="height:80px">Jim Rome</div></div>
+			    <div class="ui-block-b"><div class="ui-bar ui-bar-a grid-a" style="height:80px">Mike and Mike</div></div>
+			</div><!-- /grid-a -->
 
 		</article>
 		

@@ -1,7 +1,35 @@
+*{
+	font-family:"Roboto";
+	font-weight: 100;
+
+}
+
 .focusState{
-	height: 200px;
+	height: 100px;
+}
+
+.grid-a{
+	margin: 10px;
+}
+
+
+li h2{ 
+	font-family:"Roboto Slab";
+	font-weight: 100;
+	font-size: 5em;
+	color: #3c3c3c;
+}
+
+.listThumbnail{
+	position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
 }
 
 .showName{
-	font-size: 3em;	
+	font-family:"Roboto Slab";
+	font-weight: 300;
+	font-size: 5em;
+	color: #3c3c3c;
 }
