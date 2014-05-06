@@ -13,7 +13,7 @@
 }
 
 
-li h2{ 
+h2{ 
 	font-family:"Roboto Slab";
 	font-weight: 100;
 	font-size: 5em;
@@ -27,9 +27,12 @@ li h2{
     margin:auto;
 }
 
-.showName{
-	font-family:"Roboto Slab";
-	font-weight: 300;
-	font-size: 5em;
-	color: #3c3c3c;
+.ui-listview > li p {
+	font-size: 1em;
+	font-weight: normal;
+	display: block;
+	margin: .6em 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
