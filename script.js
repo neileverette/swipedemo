@@ -1,32 +1,31 @@
 $(document).ready(function(){
-
-	$.event.special.swipe.durationThreshold=500;
-	$.event.special.swipe.horizontalDistanceThreshold=50;
-
-	 
-	$(document).on('swipeleft', '[data-role="page"]', function(event){    
-	    if(event.handled !== true) // This will prevent event triggering more then once
-	    {    
-	        var nextpage = $(this).next('[data-role="page"]');
-	        // swipe using id of next page if exists
-	        if (nextpage.length > 0) {
-	            $.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
-	        }
-	        event.handled = true;
-	    }
-	    return false;         
-	});
+		
+	$("#playhead").draggable({ axis: "y", containment: "parent"  });
 	
-	$(document).on('swiperight', '[data-role="page"]', function(event){   
-	    if(event.handled !== true) // This will prevent event triggering more then once
-	    {      
-	        var prevpage = $(this).prev('[data-role="page"]');
-	        if (prevpage.length > 0) {
-	            $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
-	        }
-	        event.handled = true;
-	    }
-	    return false;            
-	});
+	console.log();
+	
+	
+	// CLICK GO DIRECTLY TO ANY POINT ON THE TUNER
+	function clickToTune(){
+	
+		//VARIABLES FOR THE FUNCTION
+		var playhead = $('.playhead');		
+		
+		// FUNCTION TO CHANGE THE PLAYHEAD BASED ON THE CLICK STATE IN THE TUNER GRAPHIC
+		$(document).click(function(e){
+			yPosition = e.pageY - 150;
+			moveNeedle(yPosition); // AFTER THE TUNER HAS BEEN CLICKED, MOVE THE PLAYHEAD GRAPHIC 	
+		});		
+		
+	// MOVE NEEDLE POSITION
+	function moveNeedle(y){
+		
+		// ANIMATE THE PLAYHEAD TO THE PASSED PARAMETER X
+		$('#playhead').animate({ top: y}, 'easeInOutCubic');
+		}
+	}
+	
+	clickToTune();
+	
 
 });
